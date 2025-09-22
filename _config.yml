@@ -1,0 +1,54 @@
+# GitHub Pages Configuration for Opto Privacy Policy
+
+# Custom domain configuration
+url: "https://www.optophoto.com"
+baseurl: "/privacy"
+
+# Site metadata
+title: "Privacy Policy - Opto"
+description: "Privacy Policy for Opto - Your photos, your privacy. Learn how we protect your data."
+author: "Finbar"
+
+# GitHub Pages settings
+github:
+  repository_name: Project-Privacy
+
+# Exclude files from the built site
+exclude:
+  - README.md
+  - .git/
+  - .gitignore
+  - node_modules/
+  - "*.md"
+  - "OPTO_BRAND_DESIGN_SYSTEM-temp-2025-09-22.md"
+
+# Include only the necessary files
+include:
+  - PRIVACY_POLICY.md
+
+# Disable Jekyll processing for faster builds
+plugins: []
+theme: null
+
+# Custom 404 page
+permalink: pretty
+
+# Enable safe mode
+safe: true
+
+# Markdown settings (though we're using client-side parsing)
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Assets configuration
+sass:
+  style: compressed
+
+# Security headers (if supported by hosting)
+webrick:
+  headers:
+    X-Frame-Options: SAMEORIGIN
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: "1; mode=block"
