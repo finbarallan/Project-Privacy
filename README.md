@@ -27,7 +27,7 @@ The website follows the [Opto Brand Design System](OPTO_BRAND_DESIGN_SYSTEM-temp
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/[username]/Project-Privacy.git
+   git clone https://github.com/finbarallan/Project-Privacy.git
    cd Project-Privacy
    ```
 
@@ -109,7 +109,7 @@ A       @       185.199.108.153
 A       @       185.199.109.153
 A       @       185.199.110.153
 A       @       185.199.111.153
-CNAME   www     [username].github.io
+CNAME   www     finbarallan.github.io
 ```
 
 ## 🔮 Future Enhancements
