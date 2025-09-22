@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Opto</title>
-    <meta name="description" content="Privacy Policy for Opto - Your photos, your privacy. Learn how we protect your data.">
+    <title>Opto - Photo Organization App</title>
+    <meta name="description" content="Opto - Privacy-focused photo organization app. Your photos, your privacy.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="icon" type="image/png" href="/favicon.png">
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
     
-    <!-- Preload fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Auto-redirect to privacy policy for now -->
+    <script>
+        // Auto-redirect to privacy policy after 3 seconds
+        setTimeout(() => {
+            window.location.href = '/privacy';
+        }, 3000);
+    </script>
 </head>
 <body>
     <div class="container">
@@ -25,7 +28,7 @@
                 <span class="logo-o">O</span><span class="logo-pto">pto</span>
             </div>
             <nav class="nav">
-                <a href="#" class="nav-link active">Privacy</a>
+                <a href="/privacy" class="nav-link">Privacy Policy</a>
                 <!-- Future navigation items will go here -->
             </nav>
         </header>
@@ -33,16 +36,26 @@
         <!-- Main Content -->
         <main class="main">
             <div class="content-wrapper">
-                <!-- Loading state -->
-                <div id="loading" class="loading">
-                    <div class="loading-spinner"></div>
-                    <p>Loading privacy policy...</p>
+                <div class="welcome-content">
+                    <h1>Welcome to Opto</h1>
+                    <p class="subtitle">Privacy-focused photo organization for iOS</p>
+                    
+                    <div class="app-description">
+                        <p>Opto is designed with privacy at its core. We believe your photos should remain yours.</p>
+                        <p>All photo processing happens locally on your device - no uploads, no cloud storage, no tracking.</p>
+                    </div>
+
+                    <div class="actions">
+                        <a href="/privacy" class="primary-button">Privacy Policy</a>
+                        <p class="redirect-notice">You'll be redirected to our privacy policy in <span id="countdown">3</span> seconds...</p>
+                    </div>
+
+                    <div class="app-store-info">
+                        <p>🍎 Available on the App Store</p>
+                        <p>📱 Organize your photos with complete privacy</p>
+                        <p>🔒 All processing happens on your device</p>
+                    </div>
                 </div>
-                
-                <!-- Content will be populated by JavaScript -->
-                <article id="privacy-content" class="privacy-content">
-                    <!-- Markdown content will be inserted here -->
-                </article>
             </div>
         </main>
 
@@ -57,8 +70,21 @@
         </footer>
     </div>
 
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/marked@9.1.2/marked.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+        // Countdown timer
+        let countdown = 3;
+        const countdownElement = document.getElementById('countdown');
+        
+        const timer = setInterval(() => {
+            countdown--;
+            if (countdownElement) {
+                countdownElement.textContent = countdown;
+            }
+            
+            if (countdown <= 0) {
+                clearInterval(timer);
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
