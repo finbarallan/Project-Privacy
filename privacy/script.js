@@ -5,7 +5,7 @@
 
 // Configuration
 const CONFIG = {
-    markdownFile: 'PRIVACY_POLICY.md',
+    markdownFile: '../PRIVACY_POLICY.md',
     contentContainer: 'privacy-content',
     loadingContainer: 'loading'
 };
