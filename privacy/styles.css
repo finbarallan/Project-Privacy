@@ -168,7 +168,12 @@ body {
 
 /* Privacy Policy Content Styles */
 .privacy-content {
-  display: block; /* Always show content */
+  display: block; /* Always visible now */
+  animation: fadeIn 0.5s ease-in;
+}
+
+.privacy-content.loaded {
+  display: block;
   animation: fadeIn 0.5s ease-in;
 }
 
