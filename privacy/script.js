@@ -23,19 +23,20 @@ async function initializeApp() {
         // Show loading state
         showLoading();
         
-        // Try to load and parse the markdown content
-        try {
-            const markdownContent = await loadMarkdownFile();
-            const htmlContent = parseMarkdownToHTML(markdownContent);
+        // Use embedded content directly for reliability
+        if (window.PRIVACY_POLICY_CONTENT) {
+            console.log('Using embedded content');
+            const htmlContent = parseMarkdownToHTML(window.PRIVACY_POLICY_CONTENT);
             displayContent(htmlContent);
-        } catch (error) {
-            console.warn('Could not load markdown file, using embedded fallback:', error);
-            // Fallback: use embedded content from privacy-policy-data.js
-            if (window.PRIVACY_POLICY_CONTENT) {
-                const htmlContent = parseMarkdownToHTML(window.PRIVACY_POLICY_CONTENT);
+        } else {
+            // Fallback: try to load from external source
+            console.log('Embedded content not found, trying external load');
+            try {
+                const markdownContent = await loadMarkdownFile();
+                const htmlContent = parseMarkdownToHTML(markdownContent);
                 displayContent(htmlContent);
-            } else {
-                throw new Error('No fallback content available');
+            } catch (error) {
+                throw new Error('Could not load content from any source');
             }
         }
         
@@ -260,9 +261,14 @@ function showLoading() {
  */
 function hideLoading() {
     const loadingContainer = document.getElementById(CONFIG.loadingContainer);
+    const contentContainer = document.getElementById(CONFIG.contentContainer);
     
     if (loadingContainer) {
         loadingContainer.style.display = 'none';
+    }
+    
+    if (contentContainer) {
+        contentContainer.style.display = 'block';
     }
 }
 
