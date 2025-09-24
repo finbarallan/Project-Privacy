@@ -5,7 +5,7 @@
 
 // Configuration
 const CONFIG = {
-    markdownFile: '../PRIVACY_POLICY.md',
+    markdownFile: 'https://raw.githubusercontent.com/finbarallan/Project-Privacy/main/PRIVACY_POLICY.md',
     contentContainer: 'privacy-content',
     loadingContainer: 'loading'
 };
