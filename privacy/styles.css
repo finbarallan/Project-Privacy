@@ -168,11 +168,7 @@ body {
 
 /* Privacy Policy Content Styles */
 .privacy-content {
-  display: none; /* Hidden until loaded */
-}
-
-.privacy-content.loaded {
-  display: block;
+  display: block; /* Always show content */
   animation: fadeIn 0.5s ease-in;
 }
 
