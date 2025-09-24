@@ -29,10 +29,14 @@ async function initializeApp() {
             const htmlContent = parseMarkdownToHTML(markdownContent);
             displayContent(htmlContent);
         } catch (error) {
-            console.warn('Could not load markdown file, using fallback content:', error);
-            // Fallback: redirect to test.html which has the content embedded
-            window.location.href = '/test.html';
-            return;
+            console.warn('Could not load markdown file, using embedded fallback:', error);
+            // Fallback: use embedded content from privacy-policy-data.js
+            if (window.PRIVACY_POLICY_CONTENT) {
+                const htmlContent = parseMarkdownToHTML(window.PRIVACY_POLICY_CONTENT);
+                displayContent(htmlContent);
+            } else {
+                throw new Error('No fallback content available');
+            }
         }
         
         // Hide loading state
