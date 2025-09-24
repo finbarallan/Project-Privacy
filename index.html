@@ -12,21 +12,17 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
     
-    <!-- Auto-redirect to privacy policy for now -->
-    <script>
-        // Auto-redirect to privacy policy after 3 seconds
-        setTimeout(() => {
-            window.location.href = '/privacy';
-        }, 3000);
-    </script>
+    <!-- No auto-redirect -->
 </head>
 <body>
     <div class="container">
         <!-- Header -->
         <header class="header">
-            <div class="logo">
-                <span class="logo-o">O</span><span class="logo-pto">pto</span>
-            </div>
+            <a href="/" class="logo-link">
+                <div class="logo">
+                    <span class="logo-o">O</span><span class="logo-pto">pto</span>
+                </div>
+            </a>
             <nav class="nav">
                 <a href="/privacy" class="nav-link">Privacy Policy</a>
                 <!-- Future navigation items will go here -->
@@ -47,7 +43,7 @@
 
                     <div class="actions">
                         <a href="/privacy" class="primary-button">Privacy Policy</a>
-                        <p class="redirect-notice">You'll be redirected to our privacy policy in <span id="countdown">3</span> seconds...</p>
+
                     </div>
 
                     <div class="app-store-info">
@@ -70,21 +66,6 @@
         </footer>
     </div>
 
-    <script>
-        // Countdown timer
-        let countdown = 3;
-        const countdownElement = document.getElementById('countdown');
-        
-        const timer = setInterval(() => {
-            countdown--;
-            if (countdownElement) {
-                countdownElement.textContent = countdown;
-            }
-            
-            if (countdown <= 0) {
-                clearInterval(timer);
-            }
-        }, 1000);
-    </script>
+
 </body>
 </html>

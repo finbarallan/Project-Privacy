@@ -79,6 +79,15 @@ body {
 }
 
 /* Logo Styling */
+.logo-link {
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.logo-link:hover {
+  opacity: 0.9;
+}
+
 .logo {
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Rounded', 'Inter', system-ui, sans-serif;
   font-size: 2.5rem;
