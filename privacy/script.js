@@ -389,3 +389,39 @@ const additionalStyles = `
 
 // Inject additional styles
 document.head.insertAdjacentHTML('beforeend', additionalStyles);
+
+/**
+ * Theme Toggle functionality
+ */
+function initializeThemeToggle() {
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+    
+    if (!themeToggle) return; // Exit if no theme toggle button found
+    
+    // Check for saved theme preference or default to system preference
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const currentTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+    
+    // Apply initial theme
+    body.classList.add(currentTheme + '-theme');
+    
+    // Add click event listener to theme toggle
+    themeToggle.addEventListener('click', () => {
+        if (body.classList.contains('light-theme')) {
+            body.classList.remove('light-theme');
+            body.classList.add('dark-theme');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            body.classList.remove('dark-theme');
+            body.classList.add('light-theme');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+}
+
+// Initialize theme toggle when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    initializeThemeToggle();
+});
