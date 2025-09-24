@@ -6,7 +6,7 @@
 
 ## Overview
 
-Opto is designed with privacy at its core. We believe your photos should remain yours. This policy explains how we handle your information in our photo organization app.
+Opto is designed with privacy at its core. I believe your photos should remain yours. This policy explains how Opto handles your information in this photo organization app.
 
 ## Information We Collect
 
@@ -22,13 +22,13 @@ Opto is distributed through Apple's App Store and is subject to Apple's privacy 
 - **Apple's Privacy Policy:** Your relationship with Apple and their data practices are governed by Apple's Privacy Policy
 - **Device Information:** Apple may collect basic device and performance information as part of iOS operation
 
-We may also collect our own analytics data to improve the app:
+Opto may also collect analytics data to improve the app:
 - **Crash Reports:** Anonymous crash data to fix bugs and improve stability
 - **Feature Usage:** Aggregated data about which features are used most often
 - **Performance Metrics:** App load times, response times, and performance data
 - **General Usage Patterns:** How users navigate through the app (aggregated only)
 
-All analytics data we collect is anonymous, aggregated, and cannot be linked to individual users.
+All analytics data Opto collects is anonymous, aggregated, and cannot be linked to individual users.
 
 ### What We DON'T Collect
 - Your photos or photo content
@@ -54,7 +54,7 @@ All analytics data we collect is anonymous, aggregated, and cannot be linked to 
 
 ### Local Storage Only
 - All your photos and app data remain on your device 📱
-- We operate no servers that store user data
+- Opto operates no servers that store user data
 - Your data is protected by iOS built-in security and encryption 🔐
 - App preferences are stored locally until you delete the app or reset your device
 - Deleting the app removes all associated local data permanently
@@ -85,7 +85,7 @@ You have complete control over your data:
 - **Future Opt-outs:** Any future data collection will include clear opt-out mechanisms
 
 ### EU Users (GDPR)
-For users in the European Union: You have additional rights under GDPR, though we collect minimal data. Contact us for any data-related requests.
+For users in the European Union: You have additional rights under GDPR, though Opto collects minimal data. Contact me for any data-related requests.
 
 ## Children's Privacy
 
@@ -97,14 +97,14 @@ Parents should supervise their children's use of any app that accesses the photo
 
 Opto is available worldwide through the App Store. Since all data processing happens locally on your device, your data never leaves your region unless you explicitly share content using iOS sharing features.
 
-**For EU users:** We comply with GDPR principles of data minimization and privacy by design.
+**For EU users:** Opto complies with GDPR principles of data minimization and privacy by design.
 
 ## Changes to This Policy
 
-We may update this Privacy Policy to reflect:
+I may update this Privacy Policy to reflect:
 - New features or functionality
 - Legal or regulatory requirements  
-- Improvements to our privacy practices
+- Improvements to Opto's privacy practices
 
 ### Notification of Changes
 Significant changes will be communicated through:
@@ -116,7 +116,7 @@ Continued use of the app after changes constitutes acceptance of the updated pol
 
 ## Contact Information 📧
 
-If you have any questions about this Privacy Policy, please contact us at:
+If you have any questions about this Privacy Policy, please contact me at:
 
 **Email:** contact@optophoto.com
 
