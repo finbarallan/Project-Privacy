@@ -15,7 +15,7 @@ Opto is designed with privacy at its core. I believe your photos should remain y
 - **Processing:** All photo processing happens locally on your device
 - **Storage:** No photos are uploaded, transmitted, or stored on external servers
 
-### App Store Analytics & Distribution 📱
+### App Store Analytics & Distribution
 Opto is distributed through Apple's App Store and is subject to Apple's privacy practices:
 
 - **App Store Analytics:** Apple may collect aggregated, anonymous usage data about app downloads and usage
@@ -45,17 +45,17 @@ All analytics data Opto collects is anonymous, aggregated, and cannot be linked 
 - App preferences are stored locally using iOS standard mechanisms
 
 ### Future Analytics Usage
-- Improve app performance and stability 🚀
+- Improve app performance and stability
 - Understand general usage patterns to enhance features
-- Monitor app crashes to fix bugs 🐛
+- Monitor app crashes to fix bugs
 - All analytics data is anonymous and aggregated only
 
-## Data Storage and Security 🔒
+## Data Storage and Security
 
 ### Local Storage Only
-- All your photos and app data remain on your device 📱
+- All your photos and app data remain on your device
 - Opto operates no servers that store user data
-- Your data is protected by iOS built-in security and encryption 🔐
+- Your data is protected by iOS built-in security and encryption
 - App preferences are stored locally until you delete the app or reset your device
 - Deleting the app removes all associated local data permanently
 
@@ -114,7 +114,7 @@ Significant changes will be communicated through:
 
 Continued use of the app after changes constitutes acceptance of the updated policy.
 
-## Contact Information 📧
+## Contact Information
 
 If you have any questions about this Privacy Policy, please contact me at:
 
