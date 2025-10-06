@@ -1,0 +1,37 @@
+name: Auto-sync Privacy Policy
+
+on:
+  push:
+    branches: [ main ]
+    paths: [ 'PRIVACY_POLICY.md' ]
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  sync-privacy-policy:
+    if: "!contains(github.event.head_commit.message, 'Auto-sync:')"
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Run privacy policy sync
+      run: |
+        ./sync-privacy-policy.sh << EOF
+        y
+        EOF
+      
+    - name: Check for changes
+      id: verify-changed-files
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: No changes needed
+      if: steps.verify-changed-files.outputs.changed == 'false'
+      run: echo "✅ Privacy policy JavaScript file already up to date!"
