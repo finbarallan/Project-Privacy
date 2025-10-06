@@ -25,7 +25,7 @@ Opto may also collect analytics data to improve the app:
 - **Performance Metrics:** App load times, response times, and performance data
 
 ### What Data Opto Accesses
-- Photos are accessed only for display and organization within the app  
+- Photos are accessed only for display and organisation within the app  
 - No photo data is uploaded, transmitted, or stored on external servers  
 - App preferences are stored locally using iOS standard mechanisms
 - Deleting the app removes all associated local data permanently
