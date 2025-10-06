@@ -72,7 +72,7 @@ If you have any questions about this Privacy Policy, please contact me at:
 
 ---
 
-_This privacy policy is effective as of the last updated date above._  
+_This privacy policy is effective as of the last updated date above.
 
 © 2025 Opto. All rights reserved.
 

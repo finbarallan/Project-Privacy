@@ -87,16 +87,19 @@ function parseMarkdownToHTML(markdownContent) {
             // Links
             .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
             
-            // Line breaks and paragraphs
+            // Line breaks and paragraphs - improved handling
+            .replace(/\n\n+/g, '\n\n') // Normalize multiple line breaks to double
+            .replace(/(<\/h[1-6]>)\n+/g, '$1\n') // Remove extra breaks after headers
             .replace(/\n\n/g, '</p><p>')
             .replace(/\n/g, '<br>')
             
             // Wrap in paragraphs
             .replace(/^(?!<h[1-6]|<\/p>)(.+?)(?=<h[1-6]|$)/gm, '<p>$1</p>')
             
-            // Clean up empty paragraphs
+            // Clean up empty paragraphs and extra breaks
             .replace(/<p><\/p>/g, '')
             .replace(/<p><br><\/p>/g, '')
+            .replace(/(<\/h[1-6]>)<br>/g, '$1') // Remove breaks immediately after headers
             
             // Handle bullet points
             .replace(/^- (.*$)/gm, '<li>$1</li>')
