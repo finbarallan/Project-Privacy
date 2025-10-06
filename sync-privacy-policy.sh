@@ -65,15 +65,9 @@ if command -v git &> /dev/null && git rev-parse --git-dir > /dev/null 2>&1; then
         git commit -m "Auto-sync: Update privacy policy content and cache busting ($CURRENT_DATE)"
         echo "✅ Changes committed to git"
         
-        # Ask if user wants to push
-        read -p "🚀 Push changes to remote? (y/n): " -n 1 -r
-        echo
-        if [[ $REPLY =~ ^[Yy]$ ]]; then
-            git push origin main
-            echo "✅ Changes pushed to remote"
-        else
-            echo "ℹ️  Changes committed locally only"
-        fi
+        # Automatically push changes
+        git push origin main
+        echo "✅ Changes pushed to remote"
     fi
 else
     echo "ℹ️  Git not available or not in a git repository"

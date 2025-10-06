@@ -18,10 +18,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Run privacy policy sync
-      run: |
-        ./sync-privacy-policy.sh << EOF
-        y
-        EOF
+      run: ./sync-privacy-policy.sh
       
     - name: Check for changes
       id: verify-changed-files
