@@ -1,7 +1,7 @@
 /**
  * Privacy Policy Content Data
  * This file contains the markdown content as a JavaScript string
- * Auto-generated from PRIVACY_POLICY.md - Updated 6th October 2025
+ * Auto-generated from PRIVACY_POLICY.md - Updated 2025-10-06
  */
 
 window.PRIVACY_POLICY_CONTENT = `# Privacy Policy - Opto
@@ -70,9 +70,7 @@ If you have any questions about this Privacy Policy, please contact me at:
 
 **Email:** contact@optophoto.com
 
----
-
-_This privacy policy is effective as of the last updated date above.
+This privacy policy is effective as of the last updated date above.
 
 © 2025 Opto. All rights reserved.
 
