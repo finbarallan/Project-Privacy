@@ -46,13 +46,13 @@ You have complete control over your data:
 ### EU Users (GDPR)
 For users in the European Union: You have additional rights under GDPR, though Opto collects minimal data. Contact me for any data-related requests.
 
-## Children's Privacy
+### Children's Privacy
 Opto does not collect any personal information from users of any age. The app is designed to work entirely with your existing photo library without collecting personal data.
 
-## International Users
+### International Users
 Opto is available worldwide through the App Store. Since all data processing happens locally on your device, your data never leaves your region unless you explicitly share content using iOS sharing features.
 
-## Changes to This Policy
+### Changes to This Policy
 This Privacy Policy may be updated to reflect:  
 - New features or functionality  
 - Legal or regulatory requirements  
