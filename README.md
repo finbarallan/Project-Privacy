@@ -1,6 +1,6 @@
 # Privacy Policy Website
 
-Privacy policy website for Opto, hosted at [optophoto.com/privacy](https://www.optophoto.com/privacy).
+Privacy policy website for Opto, hosted at [opto.ie/privacy](https://www.opto.ie/privacy).
 
 ## Structure
 

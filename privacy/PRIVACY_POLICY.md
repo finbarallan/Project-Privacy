@@ -1,5 +1,5 @@
-**Last Updated:** 6th October 2025  
-**Contact:** contact@optophoto.com
+**Last Updated:** 19th November 2025  
+**Contact:** contact@opto.ie
 
 ## Overview
 This policy explains how your information is handled by Opto. The application requires access to your photo library to help you review its contents and delete images on your behalf. This process happens entirely on-device to ensure you are the only one who can see your photos.
@@ -60,10 +60,10 @@ Continued use of the app after changes constitutes acceptance of the updated pol
 ## Contact Information
 If you have any questions about this Privacy Policy, please contact me at:
 
-**Email:** contact@optophoto.com
+**Email:** contact@opto.ie
 
 This privacy policy is effective as of the last updated date above.
 
 © 2025 Opto. All rights reserved.
 
-[contact@optophoto.com](mailto:contact@optophoto.com)
+[contact@opto.ie](mailto:contact@opto.ie)

@@ -277,7 +277,7 @@ function displayError() {
         contentContainer.innerHTML = `
             <div class="error-message">
                 <h2>Oops! Something went wrong</h2>
-                <p>We couldn't load the privacy policy. Please try refreshing the page or contact us at <a href="mailto:contact@optophoto.com">contact@optophoto.com</a> if the problem persists.</p>
+                <p>We couldn't load the privacy policy. Please try refreshing the page or contact us at <a href="mailto:contact@opto.ie">contact@opto.ie</a> if the problem persists.</p>
                 <button onclick="window.location.reload()" class="retry-button">
                     Try Again
                 </button>
